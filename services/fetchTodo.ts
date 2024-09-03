@@ -8,7 +8,7 @@ const fetchTodoList = async (status: string, offset: number, limit: number) => {
     );
 
     if (response.status === 200) {
-      console.log(response.data);
+      // console.log(response.data);
 
       return {
         message: "success",
