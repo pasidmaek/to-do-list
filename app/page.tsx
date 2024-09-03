@@ -50,7 +50,6 @@ export default function Home() {
   };
 
   const handleDelete = (id: string) => {
-    // window.confirm(`Do you want to delete task: ${id}`);
     if (confirm(`Do you want to delete task id : ${id}`) && todoLists) {
       setTodoLists(todoLists.filter((todo) => todo.id !== id));
     }
@@ -128,7 +127,6 @@ export default function Home() {
           </ButtonGroup>
           {todoLists ? (
             todoLists.length > 0 ? (
-
               todoLists.map((todo, index) => (
                 <CardTodo
                   key={todo.id}
